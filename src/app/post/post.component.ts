@@ -13,7 +13,16 @@ export class PostComponent implements OnInit {
   @Input() LoveIts: number = 0;
   CreatedAt = new Date();
   @Input() postStatus = "";
+
   ngOnInit(): void {
+  }
+
+  increment(){
+    this.LoveIts += 1;
+  }
+
+  decrement(){
+    this.LoveIts -= 1;
   }
 
 }
