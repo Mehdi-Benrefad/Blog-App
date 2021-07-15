@@ -1,0 +1,18 @@
+<li [ngClass]="{'list-group-item': true,
+'list-group-item-success': postStatus === 'green',
+'list-group-item-danger': postStatus === 'red'}">
+
+    <!--
+    <h4>Appareil : {{appareilName}} -- Statut : {{ getStatus() }}</h4>
+    -->
+    <h3> Titre : {{ Titre }} ==== {{CreatedAt | date}} </h3>
+    <p>
+      {{Content}}
+    </p>
+    <h4>
+      Likes: {{LoveIts}}
+    </h4>
+    <button class="btn btn-success" >Love It</button>
+    <button class="btn btn-danger" style="margin-left: 2%;">Dont Love It</button>
+
+</li>
